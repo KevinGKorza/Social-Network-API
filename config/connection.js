@@ -1,4 +1,5 @@
-//remember to connect mongoose and the mongoose data base
+//remember to connect mongoose and the mongoose database
+//Mongoose and Mongoose database connection, will run on localhost:2717
 
 const { connect, connection } = require('mongoose');
 
