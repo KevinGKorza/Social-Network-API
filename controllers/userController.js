@@ -11,7 +11,7 @@ module.exports = {
     //the code to get all users
     getAll(req, res) {
         user.find()
-        .then((userDataBase) => res.json(userDataBase))
+        .then((user) => res.json(user))
         .catch((err) => res.status(500).json(err));
     },
 
@@ -19,10 +19,10 @@ module.exports = {
     getOneUser(req, res) {
         user.findOne({_id: req.params.userId})
         .select('-__v')
-        .then((userDataBase) =>
-        !userDataBase
+        .then((user) =>
+        !user
         ? res.status(404).json({message: "Unable to find the user id, please try again."})
-        : res.json(userDataBase)
+        : res.json(user)
         )
         .catch((err) => res.status(500).json(err)) ;
     },
@@ -30,7 +30,7 @@ module.exports = {
     //the code to create a user
     createUser(req,res) {
         user.create(req.body)
-        .then((userDataBase) => res.json(userDataBase))
+        .then((user) => res.json(user))
         .catch((err)=> {
             console.log(err);
             return res.status(500).json(err);
@@ -44,10 +44,10 @@ module.exports = {
             {$set: req.body},
             {runValidators: true, new: true}
         )
-        .then((userDataBase) =>
-        !userDataBase
+        .then((user) =>
+        !user
         ? res.status(404).json({message: "Unable to update the user, please try again!"})
-        : res.json(userDataBase)
+        : res.json(user)
         )
         .catch((err) => res.status(500).json(err));
     },
@@ -55,14 +55,14 @@ module.exports = {
     //the code to delete a user
     deleteUser(req,res) {
         user.findOneAndDelete({_id: req.params.userId})
-        .then((userDataBase) =>
-        !userDataBase
+        .then((user) =>
+        !user
         ? res.status(404).json({message: "No user has been found."})
-        : thought.deleteMany({_id: {$in: userDataBase.user}})
+        : thought.deleteMany({_id: {$in: user.user}})
         )
         .then(() => res.json({message: "User has been deleted."}))
         .catch((err) => res.status(500).json(err));
     },
  
 };
-module.exports = userController;
+module.exports = user;
