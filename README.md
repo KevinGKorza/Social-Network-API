@@ -24,11 +24,31 @@ Acceptance Criteria:
 
 
 
+Screen capture:
+
+1. <img width="1556" alt="Screen Shot 2022-11-10 at 12 26 51 PM (2)" src="https://user-images.githubusercontent.com/107637260/201166091-8b4aad30-79af-49c5-9209-51eec52f1188.png">
+
+2. <img width="1551" alt="Screen Shot 2022-11-10 at 12 26 57 PM (2)" src="https://user-images.githubusercontent.com/107637260/201166178-d3e9b2e8-2ee7-4cbf-93ef-bc0066e76701.png">
+
+3. <img width="1551" alt="Screen Shot 2022-11-10 at 12 26 40 PM (2)" src="https://user-images.githubusercontent.com/107637260/201166226-dbc804cf-1117-4dc9-84cf-073885c0f76e.png">
+
+4. <img width="1550" alt="Screen Shot 2022-11-10 at 12 27 05 PM (2)" src="https://user-images.githubusercontent.com/107637260/201166289-0f12d617-4a44-47cf-bfa1-e39ffe1ef1c0.png">
+
+
 Youtube video walkthrough:
+
+https://youtu.be/8BOw6cQHxqo
 
 
 
 Github: 
+
+https://github.com/KevinGKorza/Social-Network-API.git
+
+
+
+
+
 
 
 
